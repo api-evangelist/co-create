@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecocreate.io/docs/sandbox-vs-production-environment
+docs: https://docs.usecocreate.io/docs/authentication-and-api-keys
+note: >-
+  Captured from Co:Create's own published documentation via the Internet Archive; the live docs host no longer
+  resolves. Server-to-server API calls authenticate with a static Secret API Key passed as an HTTP Bearer token
+  in the Authorization header. Separately, end-user identity in client apps is handled via "Authentication with
+  Dynamic Tokens" (Dynamic, dynamic.xyz) — that governs wallet/user sign-in, not the REST API credential.
+summary:
+  types:
+  - http
+  http_schemes:
+  - bearer
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+- name: SecretApiKey
+  type: http
+  scheme: bearer
+  description: >-
+    All API requests must include the Secret API Key as a Bearer token — `Authorization: Bearer <YOUR_KEY>`.
+    Keys are generated per team in Team Settings. Separate keys exist per environment (sandbox vs production);
+    the production key is a secret and must never be exposed to frontend code or end users.
+  header: Authorization
+  format: 'Bearer <YOUR_KEY_HERE>'
+  environments:
+  - name: production
+    base_url: https://api.cocrt.xyz
+  - name: sandbox
+    base_url: https://api.testcocrt.xyz
+  sources:
+  - https://docs.usecocreate.io/docs/sandbox-vs-production-environment
+end_user_identity:
+  name: Dynamic Tokens
+  provider: Dynamic (dynamic.xyz)
+  description: >-
+    Client-side end-user authentication / wallet sign-in for token-driven communities, documented as
+    "Authentication with Dynamic Tokens". Distinct from the server-side Secret API Key.
+  docs: https://docs.usecocreate.io/docs/dynamic-cocreate-authentication-guide
