@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecocreate.io/docs/sandbox-vs-production-environment
+docs:
+- https://docs.usecocreate.io/docs/getting-started
+- https://docs.usecocreate.io/docs/sandbox-vs-production-environment
+note: >-
+  Captured from Co:Create's published docs via the Internet Archive (live host offline). Co:Create is a web3
+  (Polygon) platform, not a card processor — there are no published test card numbers. The test surface is a
+  fully separate sandbox environment with its own base URL and API key.
+environments:
+- name: production
+  base_url: https://api.cocrt.xyz
+  description: Live environment; on-chain actions run against production contracts on Polygon.
+- name: sandbox
+  base_url: https://api.testcocrt.xyz
+  description: >-
+    Free self-service sandbox to try API requests and build an integration before going live. Uses a separate
+    sandbox API key.
+test_vs_live:
+  separation: Separate base URL and separate API key per environment.
+  key_model: >-
+    Each environment issues its own Secret API Key (generated in Team Settings). Switching environments means
+    switching both the base URL and the Bearer key.
+signup:
+  description: Sign up for the free Co:Create sandbox, log in, and generate an API key in Team Settings.
+  reference: https://docs.usecocreate.io/docs/getting-started
+notes:
+- Sandbox data may be reset periodically due to maintenance; resets are announced in advance in Discord.
+- >-
+    The interactive API reference lets you enter your API key and switch the base URL between production
+    (api.cocrt.xyz) and sandbox (api.testcocrt.xyz).
+- 'Suggested first sandbox requests (from docs): create a user, deploy a token contract, mint tokens to a user.'

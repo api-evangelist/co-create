@@ -1,22 +1,113 @@
 aid: co-create
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/co-create.png
 name: Co:Create
-description: Co:Create is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Co:Create (operated by Gesso Labs, Inc.) was an a16z crypto-backed web3 platform that gave brands and
+  developers a REST API to build and run token-driven loyalty, rewards, and community programs on the Polygon
+  blockchain. Its API-first toolkit let teams create and manage users and hosted wallets, deploy and manage
+  ERC-20, ERC-721, ERC-1155, and Soulbound token contracts, mint and transfer tokens (with synchronous and
+  asynchronous variants plus status polling), run reward Campaigns with built-in business logic, issue
+  Referrals, and offer Redemptions, Auctions, and Prize Draws. It also provided NFT media/metadata hosting,
+  fiat and crypto checkout (via a Crossmint integration), a Co:Create SDK, and Shopify/Salesforce integrations.
+  The public developer surface (docs.usecocreate.io, api.cocrt.xyz) is now offline; this profile is
+  reconstructed from the provider's own published documentation (archived) and preserved for the network.
 url: https://raw.githubusercontent.com/api-evangelist/co-create/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
+x-legal-entity: Gesso Labs, Inc.
+x-status: archived
+x-status-note: >-
+  Web3 rewards/loyalty provider; public developer surface (docs.usecocreate.io / api.cocrt.xyz) no longer
+  resolves or serves as of 2026-07. Artifacts below are captured from the provider's own published docs via
+  the Internet Archive. usecocreate.io now 301-redirects to cocreate.ink.
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Web3
+- Loyalty
+- Rewards
+- NFT
+- Blockchain
+- Polygon
+- Tokens
+- Community
+- Crypto
+apis:
+- name: Co:Create API
+  description: >-
+    REST API for token-driven communities on Polygon: users and hosted wallets; ERC-20 / ERC-721 / ERC-1155
+    and Soulbound token contract deployment, minting, patching, and transfers (sync + async with status
+    polling); reward Campaigns, Referrals, Redemptions, Auctions, and Prize Draws; and NFT media/metadata.
+  humanURL: https://docs.usecocreate.io/reference
+  baseURL: https://api.cocrt.xyz
+  tags:
+  - Web3
+  - Tokens
+  - Loyalty
+  - NFT
+  properties:
+  - type: Documentation
+    url: https://docs.usecocreate.io/docs
+  - type: APIReference
+    url: https://docs.usecocreate.io/reference
+  - type: GettingStarted
+    url: https://docs.usecocreate.io/docs/getting-started
+  - type: Authentication
+    url: authentication/co-create-authentication.yml
+  - type: Sandbox
+    url: sandbox/co-create-sandbox.yml
+common:
+- type: DeveloperPortal
+  url: https://docs.usecocreate.io/docs
+- type: Documentation
+  url: https://docs.usecocreate.io/docs
+- type: APIReference
+  url: https://docs.usecocreate.io/reference
+- type: GettingStarted
+  url: https://docs.usecocreate.io/docs/getting-started
+- type: Blog
+  url: https://medium.com/use-co-create
+- type: Website
+  url: https://www.usecocreate.io/
+- type: Authentication
+  url: authentication/co-create-authentication.yml
+- type: Sandbox
+  url: sandbox/co-create-sandbox.yml
+- type: Conventions
+  url: conventions/co-create-conventions.yml
+- type: Conformance
+  url: conformance/co-create-conformance.yml
+- type: Lifecycle
+  url: lifecycle/co-create-lifecycle.yml
+- type: DomainSecurity
+  url: security/co-create-domain-security.yml
+- type: LLMsTxt
+  url: llms/co-create-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,33 @@
+# Co:Create
+
+> Co:Create (Gesso Labs, Inc.) was an a16z crypto-backed web3 platform providing an API-first toolkit for token-driven loyalty, rewards, and community programs on the Polygon blockchain. Brands used its REST API to manage users and hosted wallets; deploy and manage ERC-20, ERC-721, ERC-1155, and Soulbound token contracts; mint and transfer tokens (synchronous and asynchronous with status polling); and run Campaigns, Referrals, Redemptions, Auctions, and Prize Draws, plus NFT media/metadata hosting and fiat/crypto checkout. The public developer surface (docs.usecocreate.io, api.cocrt.xyz) is now offline; this profile is reconstructed from the provider's own published documentation via the Internet Archive.
+
+## APIs
+
+- [Co:Create API reference](https://docs.usecocreate.io/reference): REST API for users/wallets, ERC-20/721/1155 and Soulbound tokens, Campaigns, Referrals, Redemptions, Auctions, Prize Draws, and NFT media/metadata. Production base URL: https://api.cocrt.xyz — Sandbox: https://api.testcocrt.xyz
+
+## Docs
+
+- [Introduction](https://docs.usecocreate.io/docs/introduction)
+- [Getting Started](https://docs.usecocreate.io/docs/getting-started)
+- [Authentication and API Keys](https://docs.usecocreate.io/docs/authentication-and-api-keys): Secret API Key as an HTTP Bearer token (Authorization header).
+- [Sandbox vs. Production Environment](https://docs.usecocreate.io/docs/sandbox-vs-production-environment)
+- [Calling Async Endpoints](https://docs.usecocreate.io/docs/calling-cocreates-async-endpoints)
+- [Campaigns](https://docs.usecocreate.io/docs/campaigns)
+- [Redemptions](https://docs.usecocreate.io/docs/redemptions)
+- [Fiat & Crypto Payments](https://docs.usecocreate.io/docs/payments)
+- [Co:Create SDK](https://docs.usecocreate.io/docs/sdk)
+
+## Artifacts
+
+- [Authentication profile](authentication/co-create-authentication.yml)
+- [Sandbox / test environment](sandbox/co-create-sandbox.yml)
+- [API conventions](conventions/co-create-conventions.yml)
+- [Standards conformance](conformance/co-create-conformance.yml)
+- [Lifecycle](lifecycle/co-create-lifecycle.yml)
+- [Domain security](security/co-create-domain-security.yml)
+
+## Optional
+
+- [Blog (Medium)](https://medium.com/use-co-create)
+- [Website](https://www.usecocreate.io/)

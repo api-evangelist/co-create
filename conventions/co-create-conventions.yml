@@ -1,0 +1,76 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecocreate.io/docs/calling-cocreates-async-endpoints
+docs:
+- https://docs.usecocreate.io/docs/introduction
+- https://docs.usecocreate.io/docs/sandbox-vs-production-environment
+- https://docs.usecocreate.io/docs/calling-cocreates-async-endpoints
+note: >-
+  Cross-cutting request/response semantics for the Co:Create REST API, captured from the provider's published
+  docs (via the Internet Archive) and corroborated against the archived API reference operation list. Only
+  conventions actually documented are asserted; undocumented aspects are marked unknown rather than invented.
+api_style:
+  protocol: REST over HTTPS, JSON
+  blockchain: Polygon (EVM)
+  base_urls:
+    production: https://api.cocrt.xyz
+    sandbox: https://api.testcocrt.xyz
+authentication:
+  style: HTTP Bearer with a static Secret API Key (Authorization header)
+  reference: authentication/co-create-authentication.yml
+async:
+  supported: true
+  pattern: >-
+    Write-heavy on-chain operations (contract deploy, mint, patch, transfer) are offered in both a synchronous
+    form and an asynchronous ("-async") form for scalability under high concurrency. The async call returns a
+    job that is polled for completion via a corresponding status endpoint.
+  examples:
+    async_operations:
+    - erc20-mint-async
+    - erc721-mint-async
+    - erc1155-mint-async
+    - erc20-transfer-async
+    - erc721-transfer-async
+    - erc1155-transfer-async
+    - erc20-deploy-new-async
+    - erc721-deploy-new-async
+    - erc1155-deploy-new-async
+    - erc20-patch-async
+    - erc721-patch-async
+    - erc1155-patch-async
+    status_operations:
+    - status-erc20-mint-async
+    - status-erc721-mint-async
+    - status-erc-1155-transfer
+    - status-erc20-transfer-async
+    - status-erc721-transfer-async
+    - status-erc20-deploy-or-patch-async
+    - status-erc721-deploy-or-patch-async
+    - status-erc1155-deploy-or-patch-async
+    - status-mint-erc721-async
+  docs: https://docs.usecocreate.io/docs/calling-cocreates-async-endpoints
+idempotency:
+  documented: false
+  note: No idempotency-key header or idempotency contract was found in the captured documentation.
+pagination:
+  documented: false
+  note: >-
+    List endpoints exist (e.g. list-campaigns, erc20-list, redemptions-get-redemptions, auctions-get-auctions),
+    but pagination parameters/response fields were not captured in the archived pages.
+versioning:
+  scheme: version-selector
+  current: v1
+  note: The docs and API reference expose a "v1" version selector.
+error_envelope:
+  documented: false
+  note: A formal error schema (e.g. RFC 9457 problem+json) was not observed in the captured docs.
+rate_limits:
+  documented: false
+support:
+  discord: true
+  email: help@gessolabs.com
+cross_links:
+  authentication: authentication/co-create-authentication.yml
+  sandbox: sandbox/co-create-sandbox.yml
+  conformance: conformance/co-create-conformance.yml
+  lifecycle: lifecycle/co-create-lifecycle.yml

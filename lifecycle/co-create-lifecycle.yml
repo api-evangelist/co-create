@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecocreate.io/docs
+note: >-
+  Captured from the provider's published docs via the Internet Archive; the live docs/API hosts no longer
+  resolve. No formal status page, SLA, or deprecation policy was published, so neither a `StatusPage` nor a
+  `Deprecation` pointer is emitted. This artifact records the versioning posture only.
+versioning:
+  scheme: version-selector
+  current: v1
+  docs: https://docs.usecocreate.io/reference
+maturity:
+  overall: some features documented as beta (e.g. Redemptions)
+  beta_features:
+  - Redemptions
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+sla:
+  url: null
+status_page: null
+support:
+  discord: true
+  email: help@gessolabs.com
+lifecycle_status: >-
+  Provider's public developer surface (docs.usecocreate.io / api.cocrt.xyz) is offline as of 2026-07; the
+  product appears discontinued. usecocreate.io redirects to cocreate.ink.

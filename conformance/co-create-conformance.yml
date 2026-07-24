@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecocreate.io/docs/introduction
+docs:
+- https://docs.usecocreate.io/docs/erc20-guide
+- https://docs.usecocreate.io/docs/erc721-guide
+- https://docs.usecocreate.io/docs/erc-1155-guide
+- https://docs.usecocreate.io/docs/soulbound-token
+note: >-
+  Standards conformance asserted from the provider's published docs (via the Internet Archive) and the archived
+  operation list. Co:Create's distinctive conformance is to Ethereum/EVM token standards on Polygon, not to
+  financial/security compliance regimes — no SOC 2 / ISO 27001 / PCI program was published, so no `Compliance`
+  pointer is emitted.
+standards:
+- id: erc-20
+  conforms: true
+  evidence: Deploy/mint/patch/transfer of ERC-20 fungible token contracts on Polygon (erc20-* operations).
+- id: erc-721
+  conforms: true
+  evidence: Deploy/mint/patch/transfer of ERC-721 NFT contracts on Polygon (erc721-* operations).
+- id: erc-1155
+  conforms: true
+  evidence: Deploy/mint/patch/transfer of ERC-1155 multi-token contracts on Polygon (erc1155-* operations).
+- id: soulbound-token
+  conforms: true
+  evidence: >-
+    Non-transferable "Soulbound Tokens" are a documented token type (EIP-5192 family of non-transferable NFTs).
+- id: rest-json
+  conforms: true
+  evidence: REST API returning JSON over HTTPS.
+- id: http-bearer-auth
+  conforms: true
+  evidence: Secret API Key presented as an HTTP Bearer token in the Authorization header.
+- id: oauth2
+  conforms: false
+  evidence: API uses a static Secret API Key, not OAuth2 authorization flows.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error envelope observed in captured docs.
