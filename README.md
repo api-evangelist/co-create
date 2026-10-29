@@ -64,6 +64,55 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Co:Create is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: a16z
+**Status:** archived
+
+Co:Create (operated by Gesso Labs, Inc.) was an a16z crypto-backed web3 platform that gave brands and developers a REST API to build and run token-driven loyalty, rewards, and community programs on the Polygon blockchain. Its API-first toolkit let teams create and manage users and hosted wallets, deploy and manage ERC-20, ERC-721, ERC-1155, and Soulbound token contracts, mint and transfer tokens (with synchronous and asynchronous variants plus status polling), run reward Campaigns with built-in business logic, issue Referrals, and offer Redemptions, Auctions, and Prize Draws. It also provided NFT media/metadata hosting, fiat and crypto checkout (via a Crossmint integration), a Co:Create SDK, and Shopify/Salesforce integrations. The public developer surface (docs.usecocreate.io, api.cocrt.xyz) is now offline; this profile is reconstructed from the provider's own published documentation (archived) and preserved for the network.
+
+**Areas:** Company · Web3 · Loyalty · Rewards · NFT · Blockchain · Polygon · Tokens · Community · Cryptocurrency · Loyalty & Incentives
+
+## Co:Create on APIs.io (historical record)
+
+Everything profiled for Co:Create is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/co-create/](https://apis.io/providers/co-create/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Co:Create API](https://apis.io/apis/co-create/cocreate-api/) — REST API for token-driven communities on Polygon: users and hosted wallets; ERC-20 / ERC-721 / ERC-1155 and Soulbound token contract deployment, minting,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Co Create Authentication](https://apis.io/security/co-create/co-create-authentication/)
+- [Co Create Domain Security](https://apis.io/security/co-create/co-create-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.usecocreate.io/)
+- [Documentation](https://docs.usecocreate.io/docs)
+- [Getting started](https://docs.usecocreate.io/docs/getting-started)
+- [API reference](https://docs.usecocreate.io/reference)
+- [Blog](https://medium.com/use-co-create)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Co:Create: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/co-create/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
